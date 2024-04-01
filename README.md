@@ -1,5 +1,5 @@
 # strategy-pattern-spring-boot
-This project gives a step by step explanation about implementing strategy pattern for a notification service, Making our code less populated with conditions and using the dynamic auto-wiring of classes as strategies.
+This project gives a step by step explanation about implementing strategy pattern for a payment service, Making our code less populated with conditions and using the dynamic auto-wiring of classes as strategies.
 
 Make sure to remove: assets-remove-in-usage folder it's there only for README.md usage
 
