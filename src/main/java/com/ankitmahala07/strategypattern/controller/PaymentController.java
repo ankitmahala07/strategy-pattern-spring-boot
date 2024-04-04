@@ -29,6 +29,7 @@ public class PaymentController {
     public ResponseEntity<String> payAmount(@RequestParam double amount, @RequestParam String paymentMethod){
         PaymentStrategy selectedStrategy = paymentStrategies.get(paymentMethod);
         if(selectedStrategy == null){
+            System.out.println("Invalid payment method, "+paymentMethod);
             return ResponseEntity.badRequest().body("Invalid payment method");
         }
         paymentContext.setPaymentStrategy(selectedStrategy);

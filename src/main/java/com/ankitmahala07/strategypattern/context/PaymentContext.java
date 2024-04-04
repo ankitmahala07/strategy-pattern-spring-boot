@@ -14,6 +14,7 @@ public class PaymentContext {
 
     public void processPayment(double amount){
         if(paymentStrategy == null){
+            System.out.println("Payment strategy is not set.");
             throw new IllegalStateException("Payment strategy is not set.");
         }
         paymentStrategy.pay(amount);
